@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "318731228642",
+    "firebase_url": "https://videoeditor-1f168.firebaseio.com",
+    "project_id": "videoeditor-1f168",
+    "storage_bucket": "videoeditor-1f168.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318731228642:android:7b3582b2be16895e6595bb",
+        "android_client_info": {
+          "package_name": "com.app.videoeditor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318731228642-oabvdr0o206grpk39p559sf7kgo1q0e4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.videoeditor",
+            "certificate_hash": "974928fe13725448242267f31560980cfb4b19d5"
+          }
+        },
+        {
+          "client_id": "318731228642-sf5uc0otrtjnv9masrg317qpto9lcdou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQHozUIkVNgOmlVSh4i4s9ezh5DVXJv1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318731228642-sf5uc0otrtjnv9masrg317qpto9lcdou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
