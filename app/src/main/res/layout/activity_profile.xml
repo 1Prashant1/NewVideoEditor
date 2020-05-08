@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:visibility="visible"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:background="@color/colorblue"
+        android:layout_height="50dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/back_arrow"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="My Profile"
+            android:textSize="21dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/product_sans_bold"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <ScrollView
+       android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@color/colorAccent" />
+
+        <ImageView
+            android:layout_marginTop="-80dp"
+            android:id="@+id/iv_cover_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:scaleType="centerCrop"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/circular"
+            app:civ_border_color="@color/blue"
+            app:civ_border_width="5dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="21dp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/product_sans_bold"
+            android:gravity="center"
+            android:text="Name here"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:background="@color/white"
+            app:cardCornerRadius="20dp"
+            android:layout_marginEnd="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+            <TextView
+
+                android:layout_marginTop="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:gravity="center"
+                android:background="@color/white"
+                android:fontFamily="@font/product_sans_regular"
+                android:textColor="@color/black"
+                android:paddingLeft="20dp"
+                android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Following"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white">
+
+                <TextView
+
+                    android:layout_marginTop="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/blue"
+                    android:paddingLeft="20dp"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="00"
+                    android:textColor="@color/blue"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            app:cardCornerRadius="20dp"
+            android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/product_sans_regular"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email here "
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/product_sans_regular"/>
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone:"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/product_sans_regular"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:gravity="center"
+                    android:text="Phone here "
+                    android:textColor="@color/blue"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location:"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/product_sans_regular"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location here "
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/product_sans_regular"/>
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_register"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:background="@xml/btn_rounded"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Edit"
+            android:textColor="#ffffff"/>
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
