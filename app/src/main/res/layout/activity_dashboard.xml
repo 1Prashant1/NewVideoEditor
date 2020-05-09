@@ -45,6 +45,20 @@
             android:text="Make Video"
             android:textColor="#ffffff"
             android:layout_below="@id/btn_buy"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/product_code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@xml/card_border"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="NO PRODUCT ID"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColorHighlight="@color/black"
+            android:textColor="#000000"
+            android:layout_below="@id/btn_makevideo"/>
     </RelativeLayout>
 
 </RelativeLayout>

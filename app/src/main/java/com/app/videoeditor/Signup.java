@@ -657,7 +657,7 @@ public class Signup extends AppCompatActivity implements OnMapReadyCallback, Vie
         String location = pass.getText().toString();
         String created = "yes";
         android_id = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
-        String product_id = "hello";
+        String product_id = null;
         String videos="0";
 
 
