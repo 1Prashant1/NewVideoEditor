@@ -27,6 +27,25 @@
         android:layout_height="match_parent">
         <Button
             android:layout_marginTop="20dp"
+            android:id="@+id/btn_dltprodcode"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@xml/btn_roundedfull"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="DELETE PRODUCT CODE"
+            android:textColor="#ffffff" />
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_remvdohist"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@xml/btn_roundedfull"
+            android:fontFamily="@font/product_sans_regular"
+            android:layout_below="@+id/btn_dltprodcode"
+            android:text="REMOVE VIDEO HISTORY"
+            android:textColor="#ffffff" />
+        <Button
+            android:layout_marginTop="20dp"
             android:id="@+id/btn_buy"
             android:layout_width="match_parent"
             android:layout_height="38dp"

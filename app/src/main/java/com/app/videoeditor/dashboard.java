@@ -36,7 +36,7 @@ public class dashboard extends AppCompatActivity implements View.OnClickListener
     public Button buy;
     FirebaseUser user;
     private String udid,novideo,product_id,name,email,friends,location,created,phoneno,profilepic;
-    public Button video;
+    public Button video,dltprodcode,dltvdo;
     public TextView productcode;
 
 
@@ -66,8 +66,12 @@ public class dashboard extends AppCompatActivity implements View.OnClickListener
         buy = findViewById(R.id.btn_buy);
         video=findViewById(R.id.btn_makevideo);
         productcode = findViewById(R.id.product_code);
+        dltprodcode = findViewById(R.id.btn_dltprodcode);
+        dltvdo = findViewById(R.id.btn_remvdohist);
         buy.setOnClickListener(this);
         video.setOnClickListener(this);
+        dltprodcode.setOnClickListener(this);
+        dltvdo.setOnClickListener(this);
         updateData();
 
 
@@ -155,6 +159,58 @@ public class dashboard extends AppCompatActivity implements View.OnClickListener
                     e.printStackTrace();
                 }
                 break;
+            case R.id.btn_dltprodcode:
+                deleteprodcode();
+                break;
+            case R.id.btn_remvdohist:
+                deletevdo();
+                break;
+        }
+    }
+
+    private void deletevdo() {
+        String username = name;
+        String uphoneno = phoneno;
+        String uemail = email;
+        String ufriends = friends;
+        String ulocation = location;
+        String ucreated = created;
+        String uudid = udid;
+        String uproduct_id = product_id;
+        String uvideos = novideo;
+        String uprofilepic = profilepic;
+        if(novideo!="0"){
+            CreatProfileModel creatProfileModel = new CreatProfileModel(username, uphoneno, uemail, ufriends, ulocation,uprofilepic, ucreated, uudid, uproduct_id, "0");
+            DatabaseReference db = firebaseDatabase.getReference("users/");
+            db.child(user.getUid()).setValue(creatProfileModel);
+            Toast.makeText(dashboard.this, "VIDEO HISTORY DELETED!", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(dashboard.this, "CREATE SOME VIDEOS TO DELETE THE VIDEO HISTORY!", Toast.LENGTH_SHORT).show();
+
+        }
+    }
+
+    private void deleteprodcode() {
+        String username = name;
+        String uphoneno = phoneno;
+        String uemail = email;
+        String ufriends = friends;
+        String ulocation = location;
+        String ucreated = created;
+        String uudid = udid;
+        String uproduct_id = product_id;
+        String uvideos = novideo;
+        String uprofilepic = profilepic;
+        if(product_id!=null){
+            CreatProfileModel creatProfileModel = new CreatProfileModel(username, uphoneno, uemail, ufriends, ulocation,uprofilepic, ucreated, uudid, null, uvideos);
+            DatabaseReference db = firebaseDatabase.getReference("users/");
+            db.child(user.getUid()).setValue(creatProfileModel);
+            Toast.makeText(dashboard.this, "PRODUCT CODE DELETED!", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(dashboard.this, "NO PRODUCT CODE FOUND!", Toast.LENGTH_SHORT).show();
+
         }
     }
 
