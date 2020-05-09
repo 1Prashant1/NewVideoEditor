@@ -45,7 +45,6 @@ import android.widget.Toast;
 
 import com.app.videoeditor.Utility.ImageUtility;
 import com.bumptech.glide.Glide;
-import com.facebook.login.Login;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
@@ -119,7 +118,7 @@ public class Signup extends AppCompatActivity implements OnMapReadyCallback, Vie
     private BottomSheetBehavior bottomSheetBehavior;
     private CoordinatorLayout coordinatorLayout;
 
-
+    private String android_id;
     private String generatedFilePath;
     private FirebaseStorage firebaseStorage;
     private FirebaseAuth firebaseAuth;
@@ -143,8 +142,8 @@ public class Signup extends AppCompatActivity implements OnMapReadyCallback, Vie
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        super.onCreate(savedInstanceState);
         bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.bottomSheet));
         userd = FirebaseAuth.getInstance();
 
@@ -156,35 +155,11 @@ public class Signup extends AppCompatActivity implements OnMapReadyCallback, Vie
         }
         databaseReference = FirebaseDatabase.getInstance().getReference("users");
         FirebaseUser users = firebaseAuth.getCurrentUser();
-        DatabaseReference databaseMyprofile = firebaseDatabase.getReference("users/" + Objects.requireNonNull(firebaseAuth.getUid()));
+
 
         firebaseStorage = FirebaseStorage.getInstance();
         storageReference = firebaseStorage.getReference();
 
-        databaseMyprofile.addValueEventListener(new ValueEventListener() {
-
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onDataChange(@NotNull DataSnapshot dataSnapshot) {
-
-                if(dataSnapshot.getValue()!=null) {
-                //    startActivity(new Intent(getApplicationContext(), Dashboard.class));
-                    finish();
-                }else {
-                    coordinatorLayout.setVisibility(View.VISIBLE);
-                }
-
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(Signup.this, databaseError.getCode(), Toast.LENGTH_SHORT).show();
-
-            }
-
-
-        });
 
 
         //  StorageReference storageRef = firebaseStorage.getReference().child("profilePic/" + Objects.requireNonNull(firebaseAuth.getUid()));//reach out to your photo file hierarchically
@@ -266,11 +241,40 @@ public class Signup extends AppCompatActivity implements OnMapReadyCallback, Vie
         super.onStart();
         //if the user is not logged in
         //opening the login activity
+
         if (userd.getCurrentUser() == null) {
             //  finish();
             startActivity(new Intent(this, Login.class));
         }
+        else{
+            DatabaseReference databaseMyprofile = firebaseDatabase.getReference("users/" + Objects.requireNonNull(firebaseAuth.getUid()));
+            databaseMyprofile.addValueEventListener(new ValueEventListener() {
 
+                @SuppressLint("SetTextI18n")
+                @Override
+                public void onDataChange(@NotNull DataSnapshot dataSnapshot) {
+
+                    if(dataSnapshot.getValue()!=null) {
+                        //    startActivity(new Intent(getApplicationContext(), Dashboard.class));
+                        Intent intent = new Intent(Signup.this, dashboard.class);
+                        startActivity(intent);
+                    }else {
+                        coordinatorLayout.setVisibility(View.VISIBLE);
+                    }
+
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    Toast.makeText(Signup.this, databaseError.getCode(), Toast.LENGTH_SHORT).show();
+
+                }
+
+
+            });
+
+        }
     }
 
 
@@ -528,7 +532,8 @@ public class Signup extends AppCompatActivity implements OnMapReadyCallback, Vie
                         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.logo);
                         // openSelectProfilePictureDialog();
                         Toast.makeText(getApplicationContext(), "User information updated", Toast.LENGTH_LONG).show();
-                        uploadImage();
+                        Intent intent = new Intent(Signup.this, dashboard.class);
+                        startActivity(intent);
                         //   userInformation();
                         // sendUserData();
                         // finish();
@@ -536,6 +541,8 @@ public class Signup extends AppCompatActivity implements OnMapReadyCallback, Vie
                     } else {
                         Toast.makeText(getApplicationContext(), "User information updated", Toast.LENGTH_LONG).show();
                         uploadImage();
+                        Intent intent = new Intent(Signup.this, dashboard.class);
+                        startActivity(intent);
                         //  userInformation();
                         //   sendUserData();
                         //  finish();
@@ -640,6 +647,7 @@ public class Signup extends AppCompatActivity implements OnMapReadyCallback, Vie
         }
     }
 
+    @SuppressLint("HardwareIds")
     private void userInformation(){
 
         String name = firstnaem.getText().toString();
@@ -648,11 +656,13 @@ public class Signup extends AppCompatActivity implements OnMapReadyCallback, Vie
         String friends = "0";
         String location = pass.getText().toString();
         String created = "yes";
+        android_id = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+        String product_id = "hello";
+        String videos="0";
 
 
 
-
-        CreatProfileModel creatProfileModel = new CreatProfileModel(name,phoneno,emails,friends,location,profilepic,created);
+        CreatProfileModel creatProfileModel = new CreatProfileModel(name,phoneno,emails,friends,location,profilepic,created,android_id,product_id,videos);
         FirebaseUser user = firebaseAuth.getCurrentUser();
         databaseReference.child(user.getUid()).setValue(creatProfileModel);
 

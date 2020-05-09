@@ -16,11 +16,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="2dp"
+        android:layout_marginBottom="3dp"
         android:background="#3CAEFF"
         app:itemIconTint="@drawable/bottom_nav_colors"
         app:itemTextColor="@drawable/bottom_nav_colors"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/menus_navigationbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_buy"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@xml/btn_rounded"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Buy License"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_makevideo"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@xml/btn_roundedfull"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Make Video"
+            android:textColor="#ffffff"
+            android:layout_below="@id/btn_buy"/>
+    </RelativeLayout>
 
 </RelativeLayout>

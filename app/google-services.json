@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "318731228642-mbon8rebdav35hqsuspn9o5rh390cmpu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.videoeditor",
+            "certificate_hash": "7acab27cb3d072da8c69289c3ff546a8f6b66bee"
+          }
+        },
+        {
           "client_id": "318731228642-oabvdr0o206grpk39p559sf7kgo1q0e4.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
