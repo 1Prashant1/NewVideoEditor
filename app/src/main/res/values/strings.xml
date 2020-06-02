@@ -6,7 +6,9 @@
     <string name="last_mame">Last name</string>
     <string name="first_name">First Name</string>
     <string name="enter_phone_number">Enter Phone Number</string>
-
+    <string name="prev">Previous</string>
+    <string name="next">Next</string>
+    <string name="style_1">Style 1</string>
 
     <string name="facebook_app_id">1451596438350298</string>
     <string name="gmap_key">AIzaSyAkmsUpX577ZjykgsIiPtmmvej0A6BF2_Y</string>
