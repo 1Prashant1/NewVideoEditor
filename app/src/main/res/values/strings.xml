@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">VideoEditor</string>
+    <string name="app_name">VIDEO NEWS MAKER</string>
     <string name="accept_the_terms_and_conditions"> I read and accept the terms and conditions  </string>
     <string name="sign_up">Complete your Profile</string>
     <string name="enter_email_here">Enter Email here</string>
@@ -13,4 +13,9 @@
     <string name="facebook_app_id">1451596438350298</string>
     <string name="gmap_key">AIzaSyAkmsUpX577ZjykgsIiPtmmvej0A6BF2_Y</string>
     <string name="web_client_id">318731228642-sf5uc0otrtjnv9masrg317qpto9lcdou.apps.googleusercontent.com</string>
+    <string name="about_us_1">हमारी Team IT Companies के साथ जुड़कर Online News चैनल की पूरी Setup जैसे - Website Design, Android Application and Video Editing के लिए Mobile App Provide करते हैं विगत 5 बर्षों से लगातार Web Designing की Service देते हुए , Reporter की न्यूज़ Editing वाली समस्या को ध्यान देते हुए इस Video News Maker App बनाया गया है , जिसमें आपको हम Basic से Advanced Level के Design उपलब्ध कराने की हमारी कोशिश है इसमें समय - समय पर नये Design भी उपलब्ध होंगे | जो की आपके सहयोग से ही संभव है अतः हमें शिकायत व सुझाव अवश्य देते रहें |</string>
+    <string name="about_us_2">IT Field में कई तकनीकी खामियां भी बनी रहतीं हैं जिनके लिए हम समय अनुसार Update उपलब्ध करेंगे , हमारी कोशिश ही इस App के माध्यम से निकट भविष्य में Live Telecast की Functioning भी उपलब्ध कराई जाये जिसके लिए Financial , Idea , Technology आदि का सहयोग आपसे मिलता रहे , ऐसी अपेक्षा है |</string>
+    <string name="aboutuswebsite">Visit - www.videonewsmaker.com</string>
+    <string name="aboutusemail">Email - videonewsmaker@gmail.com</string>
+
 </resources>

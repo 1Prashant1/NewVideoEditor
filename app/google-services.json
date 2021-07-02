@@ -15,19 +15,80 @@
       },
       "oauth_client": [
         {
-          "client_id": "318731228642-mbon8rebdav35hqsuspn9o5rh390cmpu.apps.googleusercontent.com",
+          "client_id": "318731228642-ur0obnuqthft21rpk3stgn0e6jj5guq7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.app.videoeditor",
-            "certificate_hash": "7acab27cb3d072da8c69289c3ff546a8f6b66bee"
+            "certificate_hash": "b618aa35cbc8c0282c4e6b31d14f5a2222fd0862"
           }
         },
         {
-          "client_id": "318731228642-oabvdr0o206grpk39p559sf7kgo1q0e4.apps.googleusercontent.com",
+          "client_id": "318731228642-tt2d2scvsurv14j4662nf2fio7ngtgt6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.videoeditor",
+            "certificate_hash": "f7193f9b4856227625a537b0ff6626128095515d"
+          }
+        },
+        {
+          "client_id": "318731228642-8d56va6tj9g12p3n3900g9v2ckknk7a0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.videoeditor",
+            "certificate_hash": "8e67f6ce5e6f3dff6cf86d1f759700687375b5fb"
+          }
+        },
+        {
+          "client_id": "318731228642-v6j9nbfoto38alis9j0bckfp1s04jhhk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.app.videoeditor",
             "certificate_hash": "974928fe13725448242267f31560980cfb4b19d5"
+          }
+        },
+        {
+          "client_id": "318731228642-sf5uc0otrtjnv9masrg317qpto9lcdou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQHozUIkVNgOmlVSh4i4s9ezh5DVXJv1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318731228642-sf5uc0otrtjnv9masrg317qpto9lcdou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318731228642:android:b2402c25d82a7dcf6595bb",
+        "android_client_info": {
+          "package_name": "com.app.videonewsmaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318731228642-naj8qttd3b72gvannju4r1gforkce41d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.videonewsmaker",
+            "certificate_hash": "b618aa35cbc8c0282c4e6b31d14f5a2222fd0862"
+          }
+        },
+        {
+          "client_id": "318731228642-24tfdtej58fagpgk873ko0h4d17q1d7q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.videonewsmaker",
+            "certificate_hash": "f7193f9b4856227625a537b0ff6626128095515d"
           }
         },
         {

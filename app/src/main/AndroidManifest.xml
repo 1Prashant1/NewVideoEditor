@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.app.videoeditor">
+    package="com.app.videonewsmaker">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -8,21 +15,54 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".activity_step3"></activity>
-        <activity android:name=".activity_step2"></activity>
-        <activity android:name=".activity_step1"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".dashboard"></activity>
-        <activity android:name=".Login">
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:requestLegacyExternalStorage="true"
+        android:largeHeap="true"
+        android:name=".ApplicationClass">
+        <activity android:name="com.app.videonewsmaker.learnapp"
+            android:screenOrientation = "portrait"/>
+        <activity android:name="com.app.videonewsmaker.refundpolicypage"
+            android:screenOrientation = "portrait"/>
+        <activity android:name="com.app.videonewsmaker.termsandconditions"
+            android:screenOrientation = "portrait"/>
+        <activity android:name="com.app.videonewsmaker.aboutus"
+            android:screenOrientation = "portrait"/>
+        <activity android:name="com.app.videonewsmaker.export"
+            android:screenOrientation = "portrait"/>
+        <activity android:name="com.app.videonewsmaker.recaudio"
+            android:screenOrientation = "portrait"/>
+        <activity android:name="com.app.videonewsmaker.PaymentScreen"
+            android:screenOrientation = "portrait"/>
+        <activity android:name="com.app.videonewsmaker.buy"
+            android:screenOrientation = "portrait"/>
+        <activity android:name="com.app.videonewsmaker.profile"
+            android:screenOrientation = "portrait"/>
+        <activity android:name="com.app.videonewsmaker.activity_step3"
+            android:screenOrientation = "portrait" />
+        <activity android:name="com.app.videonewsmaker.activity_step2"
+            android:screenOrientation = "portrait"
+            android:hardwareAccelerated="false" />
+        <activity android:name="com.app.videonewsmaker.activity_step1"
+            android:screenOrientation = "portrait"/>
+        <activity android:name="com.app.videonewsmaker.MainActivity"
+            android:screenOrientation = "portrait"/>
+        <activity android:name="com.app.videonewsmaker.dashboard"
+            android:screenOrientation = "portrait"/>
+        <activity android:name="com.app.videonewsmaker.Login"
+            android:screenOrientation = "portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Signup" />
+        <activity android:name="com.app.videonewsmaker.Signup"
+            android:screenOrientation = "portrait"/>
 
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_DGykmDaQLLILrE" />
     </application>
 
 </manifest>

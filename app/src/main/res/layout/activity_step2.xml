@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Step 2"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breaking News 1"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    
+    <EditText
+        android:id="@+id/brn1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:background="@drawable/btn_edt"
+        android:textColor="@color/black"
+        android:elevation="25dp"
+        android:maxLength="85"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breaking News 2"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/brn2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:background="@drawable/btn_edt"
+        android:textColor="@color/black"
+        android:elevation="25dp"
+        android:maxLines="1"/>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_margin="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Breaking News 2 Scrolling (English)"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <Switch
+                    android:layout_alignParentEnd="true"
+                    android:theme="@style/SwitchCompatTheme"
+                    android:background="@color/gry"
+                    android:id="@+id/br2scroll"
+                    android:layout_margin="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breaking News 1 Scrolling"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <Switch
+                android:layout_alignParentEnd="true"
+                android:theme="@style/SwitchCompatTheme"
+                android:background="@color/gry"
+                android:id="@+id/br2scroll1"
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_margin="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Breaking News 2 Scrolling"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <Switch
+                    android:layout_alignParentEnd="true"
+                    android:theme="@style/SwitchCompatTheme"
+                    android:background="@color/gry"
+                    android:id="@+id/br2scroll2"
+                    android:layout_margin="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Select Theme"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btnprev"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_step2"
+            android:text="@string/prev"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold">
+        </Button>
+        <TextView
+            android:id="@+id/styleid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/style_1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"/>
+        <Button
+
+            android:id="@+id/btnnext"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_step2"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold">
+        </Button>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/mobile1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/mobile2"
+        android:padding="12dp">
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/news_style"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:foregroundGravity="center"/>
+        <TextView
+            android:id="@+id/news1_text"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:paddingBottom="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"/>
+        <TextView
+            android:id="@+id/news2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_below="@+id/news1_text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+    </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/mobile2"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:background="@drawable/mobile2"
+                android:padding="12dp">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/city_namemob2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_weight="2.5"
+                    android:id="@+id/news1_text2"
+                    android:layout_width="0dp"
+                    android:singleLine="true"
+                    android:paddingStart="2dp"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:paddingBottom="1dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/bottombar"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:visibility="visible"
+                    android:layout_alignParentBottom="true">
+                    <ImageView
+                        android:id="@+id/news_style2"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:scaleType="fitXY"
+                        android:foregroundGravity="center"/>
+                    <TextView
+                        android:id="@+id/placeholdertext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:paddingBottom="1dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="7dp"/>
+                    <TextView
+                        android:paddingStart="5dp"
+                        android:id="@+id/news2_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:layout_below="@+id/placeholdertext2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Process Video"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_green"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="COMING SOON DESIGNS"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="22sp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="20dp"/>-->
+<!--                <ImageView-->
+<!--                    android:paddingRight="10dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:id="@+id/comingsoon"/>-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </ScrollView>
+    <RelativeLayout
+        android:id="@+id/main_template"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="352dp"
+        android:layout_height="240dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reptemp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/newsstyle">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reporterphoto"
+                />
+            <TextView
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reporterphoto"
+                android:background="@color/white"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"
+                android:id="@+id/reporter_name"
+                android:paddingLeft="2dp"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/logoimage"
+            android:layout_alignParentRight="true"/>
+        <RelativeLayout
+            android:id="@+id/city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:background="@color/white"
+            android:layout_marginVertical="5dp"
+            android:textColor="@color/black"
+            >
+            <TextView
+                android:id="@+id/city_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="10sp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/newsstyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY">
+
+                <HorizontalScrollView
+                    android:id="@+id/bitmapnews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/bitmapnews2"
+                    android:layout_marginBottom="2dp">
+                    <TextView
+                        android:id="@+id/news1text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:scrollHorizontally="true"
+                        android:textColor="@color/white"
+                        tools:ignore="RtlCompat"
+                        />
+                </HorizontalScrollView>
+
+
+            <HorizontalScrollView
+                android:id="@+id/bitmapnews2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:textAlignment="textStart"
+                    android:id="@+id/news2text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlCompat" />
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/main_template2"
+        android:layout_width="352dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/reptemp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/newsstyle2"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/reporterphoto2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/reporter_name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reporterphoto2"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/city_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:textColor="@color/black">
+
+                <TextView
+                    android:id="@+id/city_txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/news1layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:background="@color/blue">
+
+                <TextView
+                    android:id="@+id/news1text2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/logoimage2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/newsstyle2"
+            android:layout_width="match_parent"
+            android:background="@mipmap/breaking11"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY">
+
+            <RelativeLayout
+                android:id="@+id/bitmap2news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/news2text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                tools:ignore="RtlCompat" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
