@@ -1,5 +1,0 @@
-<style name="MyRaidoButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
-    <item name="colorAccent">#0091ea</item>
-    <item name="android:textColorPrimaryDisableOnly">#f44336</item>
-    <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
-</style>
